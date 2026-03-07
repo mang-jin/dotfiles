@@ -239,8 +239,8 @@ bar {
 }
 
 input * {
-        xkb_layout "us"
-	xkb_options ctrl:nocaps
+    xkb_layout "us"
+	xkb_options "ctrl:nocaps, altwin:alt_super_win"
 }
 
 exec mako
