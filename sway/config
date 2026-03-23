@@ -240,6 +240,13 @@ bar {
 
 input * {
     xkb_layout "us"
+    xkb_options ctrl:nocaps
+    
+}
+
+input "type:keyboard" {
+    repeat_delay 200
+    repeat_rate 50
 }
 
 exec mako
