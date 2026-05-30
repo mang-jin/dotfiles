@@ -1,0 +1,8 @@
+theme = "seoul256-dark-hard"
+[editor]
+line-number = "relative"
+auto-pairs = false
+[editor.whitespace.render]
+space = "all"
+tab = "none"
+newline = "none"
