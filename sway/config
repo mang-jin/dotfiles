@@ -25,7 +25,7 @@ set $XDG_SESSION_TYPE wayland
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/dotfiles/wallpaper.jpg fill
+output * bg ~/dotfiles/smooth_pengernal.jpg fill
 #
 # Example configuration:
 #
@@ -232,9 +232,10 @@ bar {
     status_command sh -c ~/.config/sway/status.sh
 
     colors {
-        statusline #ffffff
-        background #000000
-        inactive_workspace #323232ff #323232ff #5c5c5c
+        statusline #000000
+        background #bdbdbd
+        focused_workspace #5a5a5a #cfcfcf #111111
+        inactive_workspace #7a7a7a #bdbdbd #333333
     }
 }
 
@@ -249,14 +250,24 @@ input "type:keyboard" {
 }
 
 exec mako
-exec fcitx5 -d
+exec fcitx5
 exec pipewire
+exec pipewire-pulse
 # exec ~/projects/eyver/some_addition/eyver.sh 1200
 exec_always brightnessctl s 50%
 
 exec dbus-update-activation-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
-font pango:Iosevka 8
-hide_edge_borders --i3 smart
+font pango:Iosevka Term 8
+hide_edge_borders --i3 both
 titlebar_padding 6 2
 focus_follows_mouse no
+
+client.focused          #5a5a5a #cfcfcf #111111 #ffffff #7a7a7a
+client.focused_inactive #7a7a7a #bdbdbd #333333 #e8e8e8 #888888
+client.unfocused        #8a8a8a #aaaaaa #444444 #d8d8d8 #777777
+
+exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+exec_always gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+seat * xcursor_theme breeze_cursors 24
