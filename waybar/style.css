@@ -1,0 +1,84 @@
+* {
+    font-family: "Iosevka Term";
+    font-size: 8pt;
+
+    min-height: 0;
+    border-radius: 0;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+window#waybar {
+    /* background: #bdbdbd; */
+    color: #000000;
+    background-color: #bdbdbd;
+    background-image: url("/home/supermegacoolguy/dotfiles/nazuna-faint.png");
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 오른쪽 상태 위젯 공통 */
+#battery,
+#network,
+#temperature,
+#pulseaudio,
+#clock {
+    padding: 0 7px;
+    margin: 0;
+
+    background: #bdbdbd;
+    color: #202020;
+
+    border-left: 1px solid #7a7a7a;
+}
+
+#battery.charging {
+    color: #8a5800;
+}
+
+#battery.full {
+    color: #176600;
+}
+
+#battery.warning:not(.charging) {
+    color: #9a4800;
+}
+
+#battery.critical:not(.charging) {
+    color: #a00018;
+}
+
+/* 네트워크 끊김 */
+#network.disconnected {
+    color: #a00018;
+}
+
+/* 음소거 */
+#pulseaudio.muted {
+    color: #666666;
+}
+
+/* 워크스페이스 */
+#workspaces button {
+    padding: 0 6px;
+    margin: 0;
+
+    border: 0;
+    border-right: 1px solid #7a7a7a;
+
+    background: #bdbdbd;
+    color: #333333;
+}
+
+#workspaces button.focused {
+    background: #cfcfcf;
+    color: #111111;
+
+    border: 1px solid #5a5a5a;
+}
+
+#workspaces button:hover {
+    background: #cfcfcf;
+    color: #111111;
+}
