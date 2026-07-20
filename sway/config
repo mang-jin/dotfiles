@@ -253,7 +253,6 @@ input "type:keyboard" {
 exec mako
 exec fcitx5
 exec pipewire
-exec pipewire-pulse
 # exec ~/projects/eyver/some_addition/eyver.sh 1200
 exec_always brightnessctl s 50%
 

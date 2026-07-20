@@ -2,7 +2,7 @@
 
 ![demo](demo.png)
 
-dependencies:
+dependencies(void linux):
  - sway
  - wlroots
  - xdg-desktop-portal
@@ -11,8 +11,6 @@ dependencies:
  - mako
  - fcitx5
  - pipewire
- - pipewire-pulse
- - wireplumber
  - waybar
  - grimshot
  - grim
