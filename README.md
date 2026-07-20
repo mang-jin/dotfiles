@@ -7,7 +7,7 @@ dependencies:
  - wlroots
  - xdg-desktop-portal
  - xdg-desktop-portal-wlr
- - breeze_cursors
+ - Breeze theme and cursors
  - mako
  - fcitx5
  - pipewire
@@ -17,6 +17,14 @@ dependencies:
  - grimshot
  - grim
  - slurp
+ - brightnessctl
+ - wmenu
  - Iosevka Term (Font)
+ - pactl
 
-$screenshots_out을 시스템에 맞춰 재설정 필요.
+## Notes
+
+$screenshots_out must be replaced with a valid directory for the current system.
+```ini
+set $screenshots_out ~/Pictures/Screenshots
+```
