@@ -1,5 +1,8 @@
 {
+    "layer": "top",
     "position": "bottom",
+    "passthrough": false,
+    "exclusive": true,  
     "height": 22,
     "spacing": 0,
 
@@ -23,9 +26,9 @@
 
     "battery": {
         "bat": "BAT1",
-        "format": "Hp: {capacity}%({status})",
-        "format-charging": "Hp: {capacity}%(Charging)",
-        "format-full": "Hp: {capacity}%(Full)",
+        "format": "Hp: {capacity}(Discharging)",
+        "format-charging": "Hp: {capacity}(Charging)",
+        "format-full": "Hp: {capacity}(Full)",
         "interval": 5
     },
 
