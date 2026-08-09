@@ -46,8 +46,8 @@
     },
 
     "pulseaudio": {
-        "format": "Ear Destroyer: {volume}%",
-        "format-muted": "Ear Destroyer: muted",
+        "format": "Ear Destroyer: {volume}% - {desc}",
+        "format-muted": "Ear Destroyer: muted - {desc}",
         "scroll-step": 5,
         "tooltip": false
     },

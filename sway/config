@@ -256,8 +256,6 @@ exec pipewire
 # exec ~/projects/eyver/some_addition/eyver.sh 1200
 exec_always brightnessctl s 50%
 
-exec dbus-update-activation-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-
 font pango:Iosevka Term 8
 hide_edge_borders --i3 both
 titlebar_padding 6 2
@@ -271,3 +269,10 @@ exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 exec_always gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 seat * xcursor_theme Breeze_Light 24
+
+exec dbus-update-activation-environment \
+    DBUS_SESSION_BUS_ADDRESS \
+    DISPLAY \
+    WAYLAND_DISPLAY \
+    XDG_CURRENT_DESKTOP \
+    SWAYSOCK
