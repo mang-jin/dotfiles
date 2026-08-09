@@ -35,7 +35,7 @@
     "network": {
         "interface": "wlp3s0",
         "format-wifi": "Wifi: {essid}(connected)",
-        "format-disconnected": "Wifi: disconnected",
+        "format-disconnected": "Wifi: -",
         "tooltip": false,
         "interval": 5
     },
