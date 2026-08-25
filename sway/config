@@ -242,7 +242,7 @@ bar {
 
 input * {
     xkb_layout "us"
-    xkb_options ctrl:nocaps
+    xkb_options "ctrl:nocaps, altwin:swap_ralt_rwin"
 }
 
 input "type:keyboard" {
