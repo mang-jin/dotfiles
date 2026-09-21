@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =6
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/supermegacoolguy/projects/wayfm'
 let g:netrw_dirhist_6='/usr/share/vim/vimfiles/syntax'
 let g:netrw_dirhist_5='/usr/share/vim/vimfiles'
 let g:netrw_dirhist_4='/home/supermegacoolguy/projects/lava_mod/src/main/kotlin/me/mangjin/lava'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_1='/home/supermegacoolguy/projects/lava_mod/src/main/kotlin'
 let g:netrw_dirhist_0='/home/supermegacoolguy/projects/lava_mod/src/main'
 let g:netrw_dirhist_9='/home/supermegacoolguy/projects/lava_mod/src'
 let g:netrw_dirhist_8='/home/supermegacoolguy/projects/lava_mod'
-let g:netrw_dirhist_7='/home/supermegacoolguy/projects/lava_mod/src/main/kotlin/me/mangjin/lava'
